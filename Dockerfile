@@ -1,6 +1,7 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
-MAINTAINER Brett McGinnis <brettmcgin@gmail.com>
+MAINTAINER Benjamin Bordne <benjibordne@outlook.com>
+
 
 RUN apt-get update && \
     apt-get upgrade -y && \
@@ -13,7 +14,7 @@ ARG VPN_DIR=/etc/openvpn
 
 WORKDIR ${VPN_DIR}
 
-RUN wget https://www.ipvanish.com/software/configs/configs.zip && \
+RUN wget https://configs.ipvanish.com/configs/configs.zip && \
     unzip configs.zip
 
 COPY openvpn.sh openvpn.sh
