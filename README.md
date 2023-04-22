@@ -1,6 +1,9 @@
 # IPVANISH
 IPVANISH docker container
 
+## Building
+`docker build -t vpn .`
+
 ## Docker run usage
 ```Shell
 docker run \
