@@ -12,7 +12,7 @@ docker run \
   --name=ipvanish \
   -e 'USERNAME=IPVANISH_USERNAME' \
   -e 'PASSWORD=IPVANISH_PASSWORD' \
-  brettmcgin/ipvanish
+  vpn
 ```
 
 ### Optional run flags
@@ -34,7 +34,7 @@ services:
       PASSWORD: YOUR_PASSWORD
       REGION: YOUR_REGION
       USERNAME: YOUR_USERNAME
-    image: brettmcgin/private_internet_access
+    image: vpn
     ports:
     - <portsNeededByOtherService>
   busybox:
@@ -57,5 +57,5 @@ services:
 
 ## List Regions
 ```Shell
-docker run brettmcgin/ipvanish ls
+docker run vpn ls
 ```
