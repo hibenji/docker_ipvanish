@@ -12,6 +12,7 @@ docker run \
   --name=ipvanish \
   -e 'USERNAME=IPVANISH_USERNAME' \
   -e 'PASSWORD=IPVANISH_PASSWORD' \
+  -e 'REGION=ipvanish-NL-Amsterdam-ams-a01' \
   vpn
 ```
 
